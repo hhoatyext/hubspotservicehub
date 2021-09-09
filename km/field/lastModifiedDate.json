@@ -1,11 +1,11 @@
 {
-  "$id": "hubspotservicehub_hubspotOwnerID",
+  "$id": "hubspotservicehub_lastModifiedDate",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "displayName": "Hubspot Owner ID",
+  "displayName": "Last Modified Date",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {
-    "decimalType": {}
+    "dateType": {}
   },
-  "typeId": "yext/decimal"
+  "typeId": "yext/date"
 }
