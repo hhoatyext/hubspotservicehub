@@ -1,0 +1,13 @@
+{
+  "$id": "hubspotservicehub_subject",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Subject",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "MULTILINE"
+    }
+  },
+  "typeId": "yext/string"
+}
