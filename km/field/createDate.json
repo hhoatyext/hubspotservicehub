@@ -1,0 +1,11 @@
+{
+  "$id": "hubspotservicehub_createDate",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Create Date",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "dateType": {}
+  },
+  "typeId": "yext/date"
+}
