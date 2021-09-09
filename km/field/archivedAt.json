@@ -1,0 +1,11 @@
+{
+  "$id": "hubspotservicehub_archivedAt",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Archived At",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "dateType": {}
+  },
+  "typeId": "yext/date"
+}
