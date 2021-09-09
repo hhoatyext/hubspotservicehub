@@ -15,6 +15,13 @@
             "setAsHeader": false
           }
         },
+        "paginationControl": {
+          "cursorPagination": {
+            "cursor": "paging.next.link",
+            "cursorType": "FULL_URL",
+            "detectCursorInHeader": false
+          }
+        },
         "headers": {},
         "queryParams": {},
         "dataFormat": "JSON"
