@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "hubspotservicehub_hubspot-tickets",
+  "name": "Hubspot Tickets",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "tickets": {
+      "entityTypes": [
+        "hubspotservicehub_Ticket"
+      ],
+      "name": "Tickets",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "hubspotservicehub_pipeline": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "hubspotservicehub_pipelineStage": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "hubspotservicehub_subject": {
+          "textSearch": true
+        },
+        "hubspotservicehub_ticketPriority": {
+          "facet": true,
+          "nlpFilter": true
+        },
+        "name": {
+          "semanticTextSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "synonyms": {
+    "oneWay": [],
+    "synonymSet": [
+      [
+        "food",
+        "fooda",
+        "maki",
+        "sushi"
+      ],
+      [
+        "login",
+        "log in",
+        "password"
+      ]
+    ],
+    "normalization": []
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [],
+    "verticalPrompts": {
+      "tickets": [
+        "[[name]]"
+      ]
+    }
+  }
+}
