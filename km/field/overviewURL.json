@@ -1,0 +1,13 @@
+{
+  "$id": "hubspotservicehub_overviewURL",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Overview URL",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "URL"
+    }
+  },
+  "typeId": "yext/string"
+}
