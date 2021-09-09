@@ -1,0 +1,58 @@
+{
+  "$id": "hubspotservicehub_Ticket",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "",
+  "displayName": "Ticket",
+  "enabled": true,
+  "field": [
+    {
+      "id": "yext/name",
+      "required": true
+    },
+    {
+      "id": "hubspotservicehub_createDate",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_description",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_hubspotOwnerID",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_lastModifiedDate",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_pipeline",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_pipelineStage",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_subject",
+      "required": false
+    },
+    {
+      "id": "hubspotservicehub_ticketPriority",
+      "required": false
+    },
+    {
+      "id": "yext/folder",
+      "required": false
+    },
+    {
+      "id": "yext/labels",
+      "required": false
+    },
+    {
+      "id": "yext/entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "Tickets"
+}
