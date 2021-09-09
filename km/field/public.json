@@ -1,0 +1,11 @@
+{
+  "$id": "hubspotservicehub_public",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Public",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "booleanType": {}
+  },
+  "typeId": "yext/boolean"
+}
