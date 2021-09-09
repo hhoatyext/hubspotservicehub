@@ -1,0 +1,157 @@
+{
+  "$id": "hubspotservicehub_hubspotServiceHubConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v1",
+  "displayName": "Hubspot Service Hub Connector",
+  "entityType": "hubspotservicehub_Ticket",
+  "source": {
+    "sourceConfig": {
+      "apiPullConfig": {
+        "requestType": "GET",
+        "url": "https://api.hubapi.com/crm/v3/objects/tickets/",
+        "authentication": {
+          "apiKey": {
+            "key": "hapikey",
+            "value": "${{hubspotApiKey}}",
+            "setAsHeader": false
+          }
+        },
+        "headers": {},
+        "queryParams": {},
+        "dataFormat": "JSON"
+      }
+    },
+    "baseSelector": {
+      "type": "JSON",
+      "header": "Entity Container",
+      "path": "results"
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "properties.content"
+      },
+      {
+        "type": "JSON",
+        "header": "Create Date",
+        "path": "properties.createdate"
+      },
+      {
+        "type": "JSON",
+        "header": "Last Modified Date",
+        "path": "properties.hs_lastmodifieddate"
+      },
+      {
+        "type": "JSON",
+        "header": "Pipeline",
+        "path": "properties.hs_pipeline"
+      },
+      {
+        "type": "JSON",
+        "header": "Pipeline Stage",
+        "path": "properties.hs_pipeline_stage"
+      },
+      {
+        "type": "JSON",
+        "header": "Ticket Priority",
+        "path": "properties.hs_ticket_priority"
+      },
+      {
+        "type": "JSON",
+        "header": "Subject",
+        "path": "properties.subject"
+      },
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "id"
+      },
+      {
+        "type": "JSON",
+        "header": "Name",
+        "path": "properties.subject"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "extractText": {
+        "inputHeader": "Create Date",
+        "newColumnHeader": "Create Date (final)",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    },
+    {
+      "extractText": {
+        "inputHeader": "Last Modified Date",
+        "newColumnHeader": "Last Modified Date (final)",
+        "extractOperation": "ALL_TEXT_BEFORE",
+        "extractFrom": "FIRST_INSTANCE_MATCHING_TEXT",
+        "valueToFind": {
+          "plainText": {
+            "value": "T",
+            "ignoreCase": false
+          }
+        }
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "hubspotservicehub_createDate",
+      "header": "Create Date (final)",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_lastModifiedDate",
+      "header": "Last Modified Date (final)",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_pipelineStage",
+      "header": "Pipeline Stage",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_ticketPriority",
+      "header": "Ticket Priority",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_subject",
+      "header": "Subject",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_pipeline",
+      "header": "Pipeline",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "hubspotservicehub_description",
+      "header": "Description",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "useSourceSchedule": false,
+    "runMode": "DEFAULT"
+  }
+}
