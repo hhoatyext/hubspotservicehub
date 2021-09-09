@@ -1,0 +1,13 @@
+{
+  "$id": "hubspotservicehub_shareableURL",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Shareable URL",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "URL"
+    }
+  },
+  "typeId": "yext/string"
+}
