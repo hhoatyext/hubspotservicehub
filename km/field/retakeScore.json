@@ -1,0 +1,11 @@
+{
+  "$id": "hubspotservicehub_retakeScore",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Retake Score",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "decimalType": {}
+  },
+  "typeId": "yext/decimal"
+}
