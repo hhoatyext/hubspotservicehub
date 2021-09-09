@@ -1,0 +1,11 @@
+{
+  "$id": "hubspotservicehub_hubspotOwnerID",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Hubspot Owner ID",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "decimalType": {}
+  },
+  "typeId": "yext/decimal"
+}
